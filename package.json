@@ -1,0 +1,31 @@
+{
+  "name": "meizuguanwang",
+  "version": "1.0.0",
+  "description": "魅族官网",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kinoko100903/kinokoprogram.git"
+  },
+  "keywords": [
+    "program"
+  ],
+  "author": "kinoko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kinoko100903/kinokoprogram/issues"
+  },
+  "homepage": "https://github.com/kinoko100903/kinokoprogram#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1"
+  }
+}
