@@ -1,0 +1,217 @@
+﻿{
+	"classify001":{
+		"name" : "手机",
+		"list" : [
+			{
+				"id" : "shop01",
+				"name" : "        魅族 Note8",
+				"src" : "../img/img (13).min.png",
+				"price" : "888"
+			},
+			{
+				"id" : "shop02",
+				"name" : "         魅族 16X",
+				"src" : "../img/img (15).min.png",
+				"price" : "1798"
+			},
+			{
+				"id" : "shop03",
+				"name" : "             魅族V8",
+				"src" : "../img/img (16).min.png",
+				"price" : "1098"
+			},
+			{
+				"id" : "shop04",
+				"name" : "              魅族8",
+				"src" : "../img/img (19).min.png",
+				"price" : "1498"
+			},
+			{
+				"id" : "shop05",
+				"name" : "            魅族16th",
+				"src" : "../img/img (20).min.png",
+				"price" : "2498"
+			},
+			{
+				"id" : "shop06",
+				"name" : "             魅族15",
+				"src" : "../img/img (32).min.jpg",
+				"price" : "1498"
+			},
+			{
+				"id" : "shop07",
+				"name" : "             魅蓝E3",
+				"src" : "../img/img (18).min.jpg",
+				"price" : "1499"
+			},
+			{
+				"id" : "shop08",
+				"name" : "               魅蓝6",
+				"src" : "../img/img (14).min.jpg",
+				"price" : "799"
+			}
+			
+		]
+	},
+	"classify002":{
+		"name" : "声学",
+		"list" : [
+           {
+				"id" : "shop09",
+				"name" : "pop真无线蓝牙耳机",
+				"src" : "../img/img (20).min.jpg",
+				"price" : "499"
+			},	
+			{
+				"id" : "shop10",
+				"name" : "魅族 Flow Bass耳机",
+				"src" : "../img/img (31).min.jpg",
+				"price" : "399"
+			},
+			{
+				"id" : "shop11",
+				"name" : "魅族 HoLo激光蓝牙耳机",
+				"src" : "../img/img (34).min.jpg",
+				"price" : "499"
+			},
+			{
+				"id" : "shop12",
+				"name" : "魅族Ep51蓝牙运动耳机",
+				"src" : "../img/img (16).min.jpg",
+				"price" : "129"
+			},
+			{
+				"id" : "shop13",
+				"name" : "魅族Ep51蓝牙耳机",
+				"src" : "../img/img (40).min.jpg",
+				"price" : "199"
+			},
+			{
+				"id" : "shop14",
+				"name" : "魅族LIVE四单元耳机",
+				"src" : "../img/img (27).min.jpg",
+				"price" : "1099"
+			},
+			{
+				"id" : "shop15",
+				"name" : "魅族Ep31耳机",
+				"src" : "../img/img (35).min.jpg",
+				"price" : "99"
+			},
+			{
+				"id" : "shop16",
+				"name" : "魅族Ep52蓝牙耳机",
+				"src" : "../img/img (28).min.jpg",
+				"price" : "199"
+			}			
+		]
+	},
+"classify003":{
+		"name" : "配件",
+		"list" : [
+            {
+				"id" : "shop17",
+				"name" : "魅族移动电源3",
+				"src" : "../img/img (13).min.jpg",
+				"price" : "79"
+			},	
+			{
+				"id" : "shop18",
+				"name" : "快充电源直配器",
+				"src" : "../img/img (38).min.jpg",
+				"price" : "69"
+			},
+			{
+				"id" : "shop19",
+				"name" : "魅族无线充电器",
+				"src" : "../img/img (15).min.jpg",
+				"price" : "99"
+			},
+			{
+				"id" : "shop20",
+				"name" : "魅族2.0数据线",
+				"src" : "../img/img (33).min.jpg",
+				"price" : "49"
+			},
+			{
+				"id" : "shop21",
+				"name" : "魅族Micro USB数据线",
+				"src" : "../img/img (41).min.jpg",
+				"price" : "29"
+			},
+			{
+				"id" : "shop22",
+				"name" : "魅族金属数据线",
+				"src" : "../img/img (5).min.jpg",
+				"price" : "39"
+			},
+			{
+				"id" : "shop23",
+				"name" : "魅族16高强保护膜",
+				"src" : "../img/img (8).min.jpg",
+				"price" : "19"
+			},
+			{
+				"id" : "shop24",
+				"name" : "魅族16亲肤保护膜",
+				"src" : "../img/img (30).min.jpg",
+				"price" : "49"
+			}
+			
+		]
+	},
+"classify004":{
+		"name" : "配件",
+		"list" : [
+             {
+				"id" : "shop25",
+				"name" : "魅族盒子-一键找回遥控器",
+				"src" : "../img/img (6).min.jpg",
+				"price" : "179"
+			},	
+			{
+				"id" : "shop26",
+				"name" : "魅族路由器极速版",
+				"src" : "../img/img (39).min.jpg",
+				"price" : "99"
+			},
+			{
+				"id" : "shop27",
+				"name" : "魅族桌面多功能排插",
+				"src" : "../img/img (4).min.jpg",
+				"price" : "49"
+			},
+			{
+				"id" : "shop28",
+				"name" : "Everyday乐游系列",
+				"src" : "../img/img (22).min.jpg",
+				"price" : "599"
+			},
+			{
+				"id" : "shop29",
+				"name" : "魅蓝休闲旅行双肩包",
+				"src" : "../img/img (17).min.jpg",
+				"price" : "159"
+			},
+			{
+				"id" : "shop30",
+				"name" : "魅蓝腰包",
+				"src" : "../img/img (7).min.jpg",
+				"price" : "89"
+			},
+			{
+				"id" : "shop31",
+				"name" : "魅蓝数码收纳包",
+				"src" : "../img/img (19).min.jpg",
+				"price" : "49"
+			},
+			{
+				"id" : "shop32",
+				"name" : "        魅蓝旅行包",
+				"src" : "../img/img (21).min.jpg",
+				"price" : "199"
+			}
+			
+		]
+	}
+}
