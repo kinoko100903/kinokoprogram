@@ -4,49 +4,49 @@
 		"list" : [
 			{
 				"id" : "shop01",
-				"name" : "        魅族 Note8",
+				"name" : "      魅族 Note8",
 				"src" : "../img/img (13).min.png",
 				"price" : "888"
 			},
 			{
 				"id" : "shop02",
-				"name" : "         魅族 16X",
+				"name" : "       魅族 16X",
 				"src" : "../img/img (15).min.png",
 				"price" : "1798"
 			},
 			{
 				"id" : "shop03",
-				"name" : "             魅族V8",
+				"name" : "           魅族V8",
 				"src" : "../img/img (16).min.png",
 				"price" : "1098"
 			},
 			{
 				"id" : "shop04",
-				"name" : "              魅族8",
+				"name" : "            魅族8",
 				"src" : "../img/img (19).min.png",
 				"price" : "1498"
 			},
 			{
 				"id" : "shop05",
-				"name" : "            魅族16th",
+				"name" : "          魅族16th",
 				"src" : "../img/img (20).min.png",
 				"price" : "2498"
 			},
 			{
 				"id" : "shop06",
-				"name" : "             魅族15",
+				"name" : "           魅族15",
 				"src" : "../img/img (32).min.jpg",
 				"price" : "1498"
 			},
 			{
 				"id" : "shop07",
-				"name" : "             魅蓝E3",
+				"name" : "          魅蓝E3",
 				"src" : "../img/img (18).min.jpg",
 				"price" : "1499"
 			},
 			{
 				"id" : "shop08",
-				"name" : "               魅蓝6",
+				"name" : "           魅蓝6",
 				"src" : "../img/img (14).min.jpg",
 				"price" : "799"
 			}
@@ -91,12 +91,6 @@
 				"name" : "魅族LIVE四单元耳机",
 				"src" : "../img/img (27).min.jpg",
 				"price" : "1099"
-			},
-			{
-				"id" : "shop15",
-				"name" : "魅族Ep31耳机",
-				"src" : "../img/img (35).min.jpg",
-				"price" : "99"
 			},
 			{
 				"id" : "shop16",
@@ -174,12 +168,6 @@
 				"name" : "魅族路由器极速版",
 				"src" : "../img/img (39).min.jpg",
 				"price" : "99"
-			},
-			{
-				"id" : "shop27",
-				"name" : "魅族桌面多功能排插",
-				"src" : "../img/img (4).min.jpg",
-				"price" : "49"
 			},
 			{
 				"id" : "shop28",
