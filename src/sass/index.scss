@@ -737,3 +737,59 @@ position: absolute;
 top:27px;
 right:80px;
 }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/font_cnpfk2ijxte/iconfont.eot');
+  src: url('../font/font_cnpfk2ijxte/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../font/font_cnpfk2ijxte/iconfont.woff2') format('woff2'),
+      url('../font/font_cnpfk2ijxte/iconfont.woff') format('woff'),
+      url('../font/font_cnpfk2ijxte/iconfont.ttf') format('truetype'),
+      url('../font/font_cnpfk2ijxte/iconfont.svg#iconfont') format('svg');
+}
+.iconfont00 {
+  font-family: "iconfont" !important;
+  font-size: 30px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color:white;
+	z-index: 22;
+}
+#bt1{
+	position: absolute;
+	bottom:646px;
+	left:297px;
+}
+#bt2{
+	position: absolute;
+	bottom:646px;
+	left:607px;
+}
+#bt3{
+	position: absolute;
+	bottom:646px;
+	left:918px;
+}#bt4{
+	position: absolute;
+	bottom:646px;
+	right:79px;
+}#bt5{
+	position: absolute;
+	bottom:390px;
+	left:297px;
+}#bt6{
+	position: absolute;
+	bottom:390px;
+	left:607px;
+}
+#bt7{
+	position: absolute;
+	bottom:390px;
+	left:918px;
+}
+#bt8{
+	position: absolute;
+	bottom:390px;
+	right:79px;
+}
