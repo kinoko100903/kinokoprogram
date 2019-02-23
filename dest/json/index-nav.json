@@ -213,5 +213,30 @@
 			}
 			
 		]
+	},
+	"classify005":{
+		"name" : "Flyme"
+	},
+	"classify006":{
+		"name" : "服务"
+	},
+	"classify007":{
+		"name" : "专卖店"
+	},
+	"classify008":{
+		"name" : "社区"
+	},
+	"classify009":{
+		"name" : "APP下载",
+		"img" : [
+             {
+				"id" : "shop27",				
+				"src" : "../img/img (6).min.jpg"
+			},	
+			{
+				"id" : "shop28",
+				"src" : "../img/img (39).min.jpg"
+			}			
+		]
 	}
 }
