@@ -1,0 +1,290 @@
+{
+	"classify001":{
+		"name" : "推荐",
+		"list" : [
+			{
+				"id" : "shop01",
+				"name" : "      魅族 Note8",
+				"src" : "../img/img (13).min.png",
+                "price" : "888",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop02",
+				"name" : "       魅族 16X",
+				"src" : "../img/img (15).min.png",
+				"price" : "1798",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop03",
+				"name" : "           魅族V8",
+				"src" : "../img/img (16).min.png",
+				"price" : "1098",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop04",
+				"name" : "            魅族8",
+				"src" : "../img/img (19).min.png",
+                "price" : "1498",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop05",
+				"name" : "          魅族16th",
+				"src" : "../img/img (20).min.png",
+				"price" : "2498",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop06",
+				"name" : "           魅族15",
+				"src" : "../img/img (32).min.jpg",
+				"price" : "1498",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop07",
+				"name" : "          魅蓝E3",
+				"src" : "../img/img (18).min.jpg",
+				"price" : "1499",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop08",
+				"name" : "           魅蓝6",
+				"src" : "../img/img (14).min.jpg",
+				"price" : "799",
+                "describe" :"2.18最高直降300|骁龙710"
+            },
+            {
+				"id" : "shop09",
+				"name" : "pop真无线蓝牙耳机",
+				"src" : "../img/img (20).min.jpg",
+				"price" : "499",
+                "describe" :"2.18最高直降300|骁龙710"
+			},	
+			{
+				"id" : "shop10",
+				"name" : "魅族 Flow Bass耳机",
+				"src" : "../img/img (31).min.jpg",
+				"price" : "399",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop11",
+				"name" : "魅族 HoLo激光蓝牙耳机",
+				"src" : "../img/img (34).min.jpg",
+				"price" : "499",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop12",
+				"name" : "魅族Ep51蓝牙运动耳机",
+				"src" : "../img/img (16).min.jpg",
+				"price" : "129",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop13",
+				"name" : "魅族Ep51蓝牙耳机",
+				"src" : "../img/img (40).min.jpg",
+				"price" : "199",
+                "describe" :"2.18最高直降300|骁龙710"
+			}
+		]
+	},
+	"classify002":{
+		"name" : "新品",
+		"list" : [
+           {
+				"id" : "shop14",
+				"name" : "pop真无线蓝牙耳机",
+				"src" : "../img/img (20).min.jpg",
+				"price" : "499",
+                "describe" :"2.18最高直降300|骁龙710"
+			},	
+			{
+				"id" : "shop15",
+				"name" : "魅族 Flow Bass耳机",
+				"src" : "../img/img (31).min.jpg",
+				"price" : "399",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop16",
+				"name" : "魅族 HoLo激光蓝牙耳机",
+				"src" : "../img/img (34).min.jpg",
+				"price" : "499",
+                "describe" :"2.18最高直降300|骁龙710"
+            },
+            {
+				"id" : "shop17",
+				"name" : "魅族移动电源3",
+				"src" : "../img/img (13).min.jpg",
+				"price" : "79",
+                "describe" :"2.18最高直降300|骁龙710"
+			},	
+			{
+				"id" : "shop18",
+				"name" : "快充电源直配器",
+				"src" : "../img/img (38).min.jpg",
+				"price" : "69",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop19",
+				"name" : "魅族无线充电器",
+				"src" : "../img/img (15).min.jpg",
+				"price" : "99",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop20",
+				"name" : "魅族2.0数据线",
+				"src" : "../img/img (33).min.jpg",
+				"price" : "49",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop21",
+				"name" : "魅族Micro USB数据线",
+				"src" : "../img/img (41).min.jpg",
+				"price" : "29",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop22",
+				"name" : "魅族金属数据线",
+				"src" : "../img/img (5).min.jpg",
+				"price" : "39",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop23",
+				"name" : "魅族16高强保护膜",
+				"src" : "../img/img (8).min.jpg",
+				"price" : "19",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop24",
+				"name" : "魅族16亲肤保护膜",
+				"src" : "../img/img (30).min.jpg",
+				"price" : "49",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop25",
+				"name" : "魅族Ep51蓝牙运动耳机",
+				"src" : "../img/img (16).min.jpg",
+				"price" : "129",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop26",
+				"name" : "魅族Ep51蓝牙耳机",
+				"src" : "../img/img (40).min.jpg",
+				"price" : "199",
+                "describe" :"2.18最高直降300|骁龙710"
+			}
+		]
+	},
+"classify003":{
+		"name" : "价格",
+		"list" : [
+            {
+				"id" : "shop27",
+				"name" : "魅族移动电源3",
+				"src" : "../img/img (13).min.jpg",
+				"price" : "79",
+                "describe" :"2.18最高直降300|骁龙710"
+			},	
+			{
+				"id" : "shop28",
+				"name" : "快充电源直配器",
+				"src" : "../img/img (38).min.jpg",
+				"price" : "69",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop29",
+				"name" : "魅族无线充电器",
+				"src" : "../img/img (15).min.jpg",
+				"price" : "99",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop30",
+				"name" : "魅族2.0数据线",
+				"src" : "../img/img (33).min.jpg",
+				"price" : "49",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop31",
+				"name" : "魅族Micro USB数据线",
+				"src" : "../img/img (41).min.jpg",
+				"price" : "29",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop32",
+				"name" : "魅族金属数据线",
+				"src" : "../img/img (5).min.jpg",
+				"price" : "39",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop33",
+				"name" : "魅族16高强保护膜",
+				"src" : "../img/img (8).min.jpg",
+				"price" : "19",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop34",
+				"name" : "魅族16亲肤保护膜",
+				"src" : "../img/img (30).min.jpg",
+				"price" : "49",
+                "describe" :"2.18最高直降300|骁龙710"
+            },
+            {
+				"id" : "shop35",
+				"name" : "魅族LIVE四单元耳机",
+				"src" : "../img/img (27).min.jpg",
+				"price" : "1099",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop36",
+				"name" : "魅族Ep52蓝牙耳机",
+				"src" : "../img/img (28).min.jpg",
+				"price" : "199",
+                "describe" :"2.18最高直降300|骁龙710"
+            },
+            {
+				"id" : "shop37",
+				"name" : "魅族移动电源3",
+				"src" : "../img/img (13).min.jpg",
+				"price" : "79",
+                "describe" :"2.18最高直降300|骁龙710"
+			},	
+			{
+				"id" : "shop38",
+				"name" : "快充电源直配器",
+				"src" : "../img/img (38).min.jpg",
+				"price" : "69",
+                "describe" :"2.18最高直降300|骁龙710"
+			},
+			{
+				"id" : "shop39",
+				"name" : "魅族无线充电器",
+				"src" : "../img/img (15).min.jpg",
+				"price" : "99",
+                "describe" :"2.18最高直降300|骁龙710"
+			}			
+		]
+	}
+}
