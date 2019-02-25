@@ -70,9 +70,6 @@ window.onload = function(){
                      } 
                      $('.nav-hidden').css('display','none');
                      $('.nav-hid-bottom').html(moveCon); 
-                 })
-
-               
-                    
+                 })          
    })
 }
