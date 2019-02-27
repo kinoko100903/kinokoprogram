@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="style/common.css" />
+		<link rel="stylesheet" href="style/pagination.css" />
+		<script src="jquery.min.js"></script>
+		<script src="cookie.js"></script>
+		<!--<script src="jquery.cookie.js"></script>-->
+		<script src="jquery.pagination.js"></script>
+		<style>
+			.header{
+				height: 40px;
+				width: 900px;
+				margin: 0 auto 50px;
+			}
+			.sp{
+				position: absolute;
+				top: 200px;
+				right: 0;
+				width: 80px;
+				height: 50px;
+			}
+		</style>
+	</head>
+	<body>		 
+		<div class="nav2 clearfix">
+			<!--<span>小米手机</span>-->
+		</div>		
+		<ul class="shoplist clearfix" style="position: relative;">
+			<!--<li>
+				<a href="page.html">
+					<img src="img/1.jpg" alt="" />
+					<p>小米1</p>
+					<p>890</p>
+				</a>
+				<button>加入购物车</button>
+			</li>-->
+		</ul>
+		<div class="M-box" style="margin-left: 300px;"></div>
+		<button class="sp" />
+			<a href="shopcar.html">购物车</a>
+			<span id="shopNum">0</span>
+		</button>
+	</body>
+</html>
+<script type="text/javascript">
+	var index = 1;//页码
+	var pageNum = 4;//每页的数据量
+	$.ajax({
+		type:"get",
+		url:"data.json",
+		async:true,
+		success : function(arr){
+			showData(arr,index);
+			//计算总页数 ： 
+			var  pageTotal = Math.ceil(arr.length/pageNum);
+			//分页插件
+			$(".M-box").pagination({
+				pageCount:pageTotal,
+				keepShowPN : true,
+				callback : function(api){
+					//获取点击的控件页码
+					index = api.getCurrent();
+					//点击分页控件时  使用ajax获取服务器的数据
+					$.getJSON("data.json",function(arr){
+						  showData(arr,index); 
+					})
+				}
+			})
+		}
+	});
+	//封装一个函数 功能是根据页面获取分页后的数据
+	function showData(arr,index){
+		var conStr = "";
+		for( var i = (index-1)*pageNum ; i < index*pageNum ; i++ ){
+			var pro = arr[i];
+			if( i < arr.length ){//解决最后一页bug（下标越界）
+				conStr += `<li>
+								<a href="page.html?pid=${ pro.id }">
+									<img src="img/${pro.src}" alt="" />
+									<p>${ pro.name }</p>
+									<p>${ pro.price }</p>
+								</a>
+								<button data-pid='${ pro.id }' data-pname='${ pro.name }' data-src= '${ pro.src }' data-price='${ pro.price }'>购买</button>
+							</li>`;
+			}
+		}
+		$(".shoplist").html( conStr );
+	}
+	
+	//添加购物车功能  将当前购买的商品信息存入到cookie中
+	$(".shoplist").on("click","button",function(){
+		//确定起始点对象和结束点对象
+		var startObj = $(this);
+		var endObj = $(".sp");
+		//获取按钮对应的大图的路径
+		var src = $(this).data("src") ;
+		//调用抛物线方法
+		$.fnInit( startObj , endObj ).fnMove( src );
+		
+		var flag = true;//假设值为true时  向数组中push对象
+		var json = {};//用于存放当前购买的商品信息
+		var arr = [];//用于存放当前购买的多个商品信息
+		//获取商品的信息并存放到json中
+		json = {
+			"id" : $(this).data("pid"),
+			"name":$(this).data("pname"),
+			"src":$(this).data("src"),
+			"price":$(this).data("price"),
+			"count" : 1
+		}
+		
+		//获取cookie中的数据 长度如果不为0  说明返回的是一个数组 也就是原cookie数据
+		var brr = getCookie( "shoplist" );
+		if( brr.length != 0 ){
+			arr = brr;
+			//判断当前购买的商品 是否存在于cookie中  arr
+			//如果存在，就将count值++
+			for ( var i = 0 ; i < arr.length ; i++ ) {
+				if( json.id == arr[i].id ){
+					arr[i].count++;
+					flag = false;
+					break;
+				}
+			}
+		}
+		if( flag ){
+			// 将json对象存入到数组中
+			arr.push( json );
+		}
+		
+		//将数组存放到cookie中
+		setCookie( "shoplist" , JSON.stringify( arr ) );
+		
+		console.log( document.cookie )
+	})
+	
+	//定义一个函数 功能获取商品总数量
+	getCount();
+	function getCount(){
+		var count = 0;
+		var brr = getCookie("shoplist");
+		if( brr.length != 0 ){
+			for( var i = 0 ; i < brr.length ; i++ ){
+				count += brr[i].count;
+			}
+		}
+		$("#shopNum").html( count );
+	}
+	
+	//编写插件 实现抛物线功能
+	$.extend({
+		fnInit : function(startObj , endObj){
+			//起始点
+			this.startPoint = {
+				x : startObj.offset().left + startObj.width()/2,
+				y : startObj.offset().top
+			}
+			//结束点
+			this.endPoint = {
+				x : endObj.offset().left + endObj.width()/2,
+				y : endObj.offset().top
+			}
+			//最高的
+			this.topPoint = {
+				x : this.endPoint.x - 100,
+				y : this.endPoint.y - 50
+			}
+			//确定抛物线系数
+			this.a = ((this.startPoint.y - this.endPoint.y) * (this.startPoint.x - this.topPoint.x) - (this.startPoint.y - this.topPoint.y) * (this.startPoint.x - this.endPoint.x)) / ((this.startPoint.x * this.startPoint.x - this.endPoint.x * this.endPoint.x) * (this.startPoint.x - this.topPoint.x)-(this.startPoint.x * this.startPoint.x - this.topPoint.x * this.topPoint.x) * (this.startPoint.x - this.endPoint.x));  
+								
+			this.b = ((this.endPoint.y - this.startPoint.y) - this.a * (this.endPoint.x * this.endPoint.x - this.startPoint.x * this.startPoint.x)) / (this.endPoint.x - this.startPoint.x);  
+								
+			this.c = this.startPoint.y - this.a * this.startPoint.x * this.startPoint.x - this.b * this.startPoint.x;
+			console.log( this.a , this.b , this.c )
+			
+			return this;
+		},
+		fnMove : function(src){ //src指向点击按钮对应的大图的路径
+			var $img = $("<img>");
+			$img.attr( "src" , "img/" + src );
+			$img.appendTo( $("body") );
+			//获取图片的起始点坐标
+			var x = this.startPoint.x;
+			var y = this.startPoint.y;
+			//设置图片的样式
+			$img.css({
+				width:30,
+				height:30,
+				position:"absolute",
+				left : x,
+				top : y
+			})
+			var timer = setInterval( function(){
+				x = x + 10,
+				y = this.a * x * x + this.b * x + this.c;
+				if( x < this.endPoint.x ){
+					$img.css({
+						left : x,
+						top : y
+					})
+				}else{
+					clearInterval( timer );
+					$img.remove();
+					getCount();
+				}
+			}.bind(this),10 )
+		}
+	})
+</script>

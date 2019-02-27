@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery.min.js"></script>
+		
+		<style>
+			#shopbtn{
+				font-size: 30px;
+				padding: 5px 10px;
+				border: 1px solid red;
+				margin-bottom: 20px;
+				cursor: pointer;
+			}
+			p,button{
+				margin-left:80px;
+			}
+			img{
+				margin-left:40px ;
+			} 
+		</style>
+		<script src="cookie.js"></script>
+	</head>
+	<body>
+		
+		<div class="shopinfo">
+			<!--<img src="img/1.jpg" alt="" />
+			<p>小米1</p>
+			<p>333</p>
+			<button>购买</button>-->
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	//获取路径信息
+  	var hrefStr = location.href; 
+  	//"http://127.0.0.1/shopCartfly1819/page.html?pid=shop01"
+  	var pid = hrefStr.split("=")[1];
+  	//使用ajax方式请求到服务器的数据
+  	//根据pid在数据中查找对应的商品  将pid对应商品的详情显示出来
+  	$.ajax({
+  		type:"get",
+  		url:"data.json",
+  		async:true,
+  		success : function(msg){
+  			var str = "";
+  			for( var i = 0 ; i < msg.length ; i ++ ){
+  				if( pid == msg[i].id ){
+  					str = `<img src="img/${msg[i].src}" alt="" />
+							<p>${msg[i].name}</p>
+							<p>${msg[i].price}</p>
+							<button>购买</button>`
+  				}
+  			}
+  			$(".shopinfo").html( str );
+  		}
+  	});
+  	
+</script>

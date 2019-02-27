@@ -502,90 +502,71 @@ img{
     bottom:33px;
     right:45px;
 }
-			#box{
-				border:1px solid white;
-				width:500px;
-				height:800px;
-				margin: 100px auto;
-				position: relative;
-			     overflow: hidden;
-			
-			}
-			#top{
-				height:500px;
-				
-			}
-			#bigul{
-				width:500px;
-				height:500px;
-				position: absolute;
-			}
-			#bigul li{
-				position:absolute ;
-				list-style: none;
-			}
-			#bigul li img{
-				width:500px;
-				height:500px;
-				position: absolute;
-			}
-			#smallul{
-				height:100px;
-			     position: absolute;
-/* 		         padding-top: 10px;
-			     padding-bottom: 10px;
- */			}
-			#smallul li{
-				float:left;
-				list-style: none;
-			}
-			#smallul li img{
-				width:100px;
-				height:100px;
-				margin-left :20px;
-			}
-// 			#mark_left{
-// 				position: absolute;
-// 				width:400px;
-// 				height:600px;
-// 				top:0;
-// 				left:0;
-// 				z-index:1000;
-// 			}
-// 			#mark_right{
-// 				position: absolute;
-// 				width:400px;
-// 				height:600px;
-// 				top:0;
-// 				right:0;
-// 				z-index:1000;
-// 			}
-// 			#btn_left{
-// 			   position: absolute;
-// 			   background: url(images/btn.gif) no-repeat;
-// 				z-index:1001;
-// 				width: 60px;
-// 				height:60px;
-// 			   margin-top:275px;
-// 			   opacity:0;
-// 			}
-// 			#btn_right{
-// 			   position: absolute;
-// 			   background: url(images/btn.gif) no-repeat 0 -61px ;
-// 				z-index:1001;
-// 				width: 60px;
-// 				height:60px;
-// 				right:0;
-// 			   margin-top:275px;
-// 			   opacity:0;
-// 			}
-// 			
-#cricle{
-	width:15px;
-	height:15px;
-	border-radius: 50%;
-	background: red;
-	position: absolute;
-	top:27px;
-	right:80px;
+ul,ol{list-style:none;}
+#box {
+	position:relative;
+	margin:100px auto;
+	/*border:1px solid #ccc;*/
+	width: 500px;
+	height:800px;
 }
+#box ul{
+	overflow: hidden;
+  /*  border-top:1px solid #ccc;*/
+	position:absolute;
+	top:500px;
+	left:-42px;
+	width:500px;
+}
+#box li {
+	float: left;	 
+	border-top:none;
+}
+.small{
+	width:500px;
+	height:500px;	
+	background: white; 
+}
+.small img{
+	position:absolute;
+	top:0;
+	left:0;
+}
+#bottom li{
+	width:107px;
+	margin-top:5px;
+}
+#big{
+		width:500px;
+		height:500px;
+		border:1px solid #ccc;
+		overflow:hidden;
+		position:absolute;
+		top:0;
+		left:500px;
+		display:none;
+		z-index: 20;
+	}
+#mask{
+		width:175px;
+		height:175px;
+		//background:white;
+		border-radius: 50%;
+		border:1px solid white;
+		opacity:0.4;
+		/*background: url(images/4m.jpg);*/
+		position:absolute;
+		top:0;
+		left:0;
+		display:none;
+	}
+.bigImage{
+		position:absolute;
+		top:0;
+		left:0;
+	}
+#small{
+		position:relative;
+		cursor:move;  //鼠标移动状态
+
+	}

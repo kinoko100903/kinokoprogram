@@ -20,7 +20,7 @@ window.onload = function(){
             //console.log(json[attr].list[i]);
            var pro = json[attr].list[i];
            //console.log(pro.src)
-           produceCon += `<a id ="meizunote8" href="javascript: ;"><img src="${pro.src}" alt="图片加载失败"><p>${pro.name}</p><p>  <i class="iconfont5">&#xe6a3;</i>${pro.price}</p></a>`;
+           produceCon += `<a id ="meizunote8" href="details.html"><img src="${pro.src}" alt="图片加载失败"><p>${pro.name}</p><p>  <i class="iconfont5">&#xe6a3;</i>${pro.price}</p></a>`;
           }         
       }
       $('.nav-hid-bottom').html(produceCon); 
@@ -43,7 +43,7 @@ window.onload = function(){
                         var proo = json[cname].list;
                      // console.log(proo[j]);
                       //console.log(proo[j].src)
-                        moveCon += `<a id ="meizunote8" href="javascript: ;"><img src="${proo[j].src}" alt="图片加载失败"><p>${proo[j].name}</p><p>  <i class="iconfont5">&#xe6a3;</i>${proo[j].price}</p></a>`;
+                        moveCon += `<a id ="meizunote8" href="details.html"><img src="${proo[j].src}" alt="图片加载失败"><p>${proo[j].name}</p><p>  <i class="iconfont5">&#xe6a3;</i>${proo[j].price}</p></a>`;
                      } 
                      $('.nav-hidden').css('display','block');
                      $('.nav-hid-bottom').html(moveCon); 
@@ -66,7 +66,7 @@ window.onload = function(){
                         var proo = json[cname].list;
                        //console.log( proo[j]);
                       // console.log(proo[j].name);
-                        moveCon += `<a id ="meizunote8" href="javascript: ;"><img src="${proo[j].src}" alt="图片加载失败"><p>${proo[j].name}</p><p>  <i class="iconfont5">&#xe6a3;</i>${proo[j].price}</p></a>`;
+                        moveCon += `<a id ="meizunote8" href="details.html"><img src="${proo[j].src}" alt="图片加载失败"><p>${proo[j].name}</p><p>  <i class="iconfont5">&#xe6a3;</i>${proo[j].price}</p></a>`;
                      } 
                      $('.nav-hidden').css('display','none');
                      $('.nav-hid-bottom').html(moveCon); 
