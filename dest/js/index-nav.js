@@ -1,4 +1,4 @@
-window.onload = function(){
+﻿window.onload = function(){
 //利用ajax获取json数据：
    var data = $.ajax({
       type:"get",
@@ -14,7 +14,7 @@ window.onload = function(){
       for(var attr in json){
          //console.log(json[attr]);
          //给title给一个自定义属性，以便后面通过自定义的属性获取相对应的值。
-         titleCon += `<li cname='${attr}'><a href="list.html" id = "shouji">${json[attr].name}</a></li>`;
+         titleCon += `<li cname='${attr}'><a href="../shopCartfly/list1.html" id = "shouji">${json[attr].name}</a></li>`;
         // 遍历对象：
           for(var i in json[attr].list){
             //console.log(json[attr].list[i]);
